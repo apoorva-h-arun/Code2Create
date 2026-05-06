@@ -399,7 +399,7 @@ if __name__ == "__main__":
 
     store = load_all()
 
-    print("\n── Spot checks ──")
+    print("\n-- Spot checks --")
     for cid, ct in [(1,"SHORT"), (99,"LONG")]:
         row  = get_score_row(cid, ct, store)
         best = int(np.argmax(row))
